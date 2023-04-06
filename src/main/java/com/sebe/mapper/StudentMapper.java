@@ -8,7 +8,7 @@ import com.sebe.model.Student;
 import com.sebe.dto.StudentDTO;
 import org.mapstruct.Mapper;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface StudentMapper {
 
     StudentDTO toStudentDTO(Student student);

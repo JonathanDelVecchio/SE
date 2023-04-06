@@ -11,6 +11,7 @@ public class StudentDTO {
     private Long id;
     private String name;
     private String email;
+    private String password;
     private Date dateOfBirth;
     private String gender;
     private String city;
@@ -25,7 +26,6 @@ public class StudentDTO {
     private Double gpa;
 
     // Getters and setters for all properties
-
     public Long getId() {
         return id;
     }
@@ -48,6 +48,14 @@ public class StudentDTO {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public Date getDateOfBirth() {
@@ -145,5 +153,5 @@ public class StudentDTO {
     public void setGpa(Double gpa) {
         this.gpa = gpa;
     }
-    
+
 }

@@ -3,12 +3,14 @@ package com.sebe.mapper;
 import com.sebe.dto.StudentDTO;
 import com.sebe.model.Student;
 import javax.annotation.processing.Generated;
+import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-04-05T23:33:00-0700",
+    date = "2023-04-06T11:02:40-0700",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 20 (Oracle Corporation)"
 )
+@Component
 public class StudentMapperImpl implements StudentMapper {
 
     @Override
@@ -22,6 +24,7 @@ public class StudentMapperImpl implements StudentMapper {
         studentDTO.setId( student.getId() );
         studentDTO.setName( student.getName() );
         studentDTO.setEmail( student.getEmail() );
+        studentDTO.setPassword( student.getPassword() );
         studentDTO.setDateOfBirth( student.getDateOfBirth() );
         studentDTO.setGender( student.getGender() );
         studentDTO.setCity( student.getCity() );
@@ -49,6 +52,7 @@ public class StudentMapperImpl implements StudentMapper {
         student.setId( studentDTO.getId() );
         student.setName( studentDTO.getName() );
         student.setEmail( studentDTO.getEmail() );
+        student.setPassword( studentDTO.getPassword() );
         student.setDateOfBirth( studentDTO.getDateOfBirth() );
         student.setGender( studentDTO.getGender() );
         student.setCity( studentDTO.getCity() );
