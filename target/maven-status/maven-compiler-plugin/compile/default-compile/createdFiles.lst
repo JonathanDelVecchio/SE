@@ -9,6 +9,7 @@ com/sebe/mapper/ExtracurricularMapperImpl.class
 com/sebe/service/JobReferralService.class
 com/sebe/model/Extracurricular.class
 com/sebe/repository/StudentRepository.class
+com/sebe/config/WebConfig.class
 com/sebe/mapper/JobReferralMapper.class
 com/sebe/repository/JobReferralRepository.class
 com/sebe/model/Student.class

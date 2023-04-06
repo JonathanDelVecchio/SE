@@ -38,7 +38,7 @@ public class StudentController {
         return new ResponseEntity<>("Test successful", HttpStatus.OK);
     }
 
-    /*@GetMapping("/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<StudentDTO> getStudentById(@PathVariable Long id) {
         StudentDTO studentDTO = studentService.getStudentById(id);
         return new ResponseEntity<>(studentDTO, HttpStatus.OK);
@@ -47,7 +47,7 @@ public class StudentController {
     public ResponseEntity<List<StudentDTO>> getAllStudents() {
         List<StudentDTO> students = studentService.getAllStudents();
         return new ResponseEntity<>(students, HttpStatus.OK);
-    }*/
+    }
     @PutMapping("/{id}")
     public ResponseEntity<StudentDTO> updateStudent(@PathVariable Long id, @RequestBody StudentDTO studentDTO) {
         StudentDTO updatedStudent = studentService.updateStudent(id, studentDTO);
@@ -65,15 +65,4 @@ public class StudentController {
         return new ResponseEntity<>("Error occurred", HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
-    @RequestMapping("/hello")
-    public String hello() {
-        return "Hello, world!";
-    }
-    
-    @PostMapping("/testCreate")
-public ResponseEntity<String> testCreate(@RequestBody StudentDTO studentDTO) {
-    logger.info("Test createStudent request: {}", studentDTO);
-    logger.info("Received password: {}", studentDTO.getPassword());
-    return new ResponseEntity<>("Test successful", HttpStatus.OK);
-}
 }

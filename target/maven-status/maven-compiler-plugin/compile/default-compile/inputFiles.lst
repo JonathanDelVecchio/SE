@@ -17,6 +17,7 @@
 /Users/Idata/Desktop/SEBE/src/main/java/com/sebe/repository/JobReferralRepository.java
 /Users/Idata/Desktop/SEBE/src/main/java/com/sebe/dto/StudentDTO.java
 /Users/Idata/Desktop/SEBE/src/main/java/com/sebe/application/SebeApplication.java
+/Users/Idata/Desktop/SEBE/src/main/java/com/sebe/config/WebConfig.java
 /Users/Idata/Desktop/SEBE/src/main/java/com/sebe/service/StudentService.java
 /Users/Idata/Desktop/SEBE/src/main/java/com/sebe/model/JobReferral.java
 /Users/Idata/Desktop/SEBE/src/main/java/com/sebe/mapper/StudentMapper.java
