@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sebe_db?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 9toy[YwV]R*68WvWG
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+  logging:
+  level:
+    org.springframework.web: DEBUG
+    com.sebe: DEBUG
